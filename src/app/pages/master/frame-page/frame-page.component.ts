@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-frame-page',
-  templateUrl: './frame-page.component.html',
-  styleUrls: ['./frame-page.component.css']
+  templateUrl: './frame-page.component.html'
 })
 export class FramePageComponent implements OnInit {
 
