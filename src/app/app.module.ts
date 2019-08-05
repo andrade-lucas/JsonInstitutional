@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomePageComponent } from './pages/institutional/home-page/home-page.component';
+import { FramePageComponent } from './pages/master/frame-page/frame-page.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { ContactPageComponent } from './pages/institutional/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomePageComponent
+    HomePageComponent,
+    FramePageComponent,
+    FooterComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
