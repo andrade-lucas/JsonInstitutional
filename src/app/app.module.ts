@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrModule } from 'ngx-toastr';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +11,8 @@ import { HomePageComponent } from './pages/institutional/home-page/home-page.com
 import { FramePageComponent } from './pages/master/frame-page/frame-page.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { ContactPageComponent } from './pages/institutional/contact-page/contact-page.component';
+import { EmailService } from './services/email.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,9 +27,12 @@ import { ContactPageComponent } from './pages/institutional/contact-page/contact
     BrowserModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [EmailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
